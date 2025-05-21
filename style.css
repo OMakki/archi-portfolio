@@ -159,6 +159,11 @@ a {
     width: 300px;
     padding-top: 10px;
 }
+.programming_skill {
+    font-size: 12px;
+    width: 300px;
+    margin: 10px auto 0;
+}
 .programming_wrap img {
     height: 150px;
     margin-bottom: 8px;
