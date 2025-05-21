@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    color: #35322E;
+    font-family: 'MS Pゴシック', sans-serif;
+    font-weight: 350;
+}
+header {
+    overflow: hidden;
+}
+main {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #6F789D;
+}
+.page_title,
+.archi_title,
+.programming_title,
+#footer_title {
+    font-weight: 300;
+}
+.slider_parent {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    transition: transform 2s ease-in-out;
+}
+.slider_item {
+    width: 100%;
+    flex-shrink: 0;
+}
+.slider_item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page_title {
+    width: fit-content;
+    margin: 20px auto 26px;
+    font-size: 40px;
+    color: #6F789D;
+}
+.content_area {
+    padding: 30px 7%;
+}
+#about_area,
+#programming_area{
+    background-color: #F3F3F3;
+}
+.about_content {
+    margin: 30px auto;
+    display: flex;
+    width: fit-content;
+}
+.face_img {
+    height: 300px;
+}
+#about_detail_parent {
+    margin-left: 50px;
+}
+#about_detail span {
+    display: block;
+}
+#about_detail .name {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #6F789D;
+}
+#about_detail .skill {
+    margin-top: 20px;
+}
+.archi_title,
+.programming_title {
+    color: #6F789D;
+    font-size: 32px;
+    width: fit-content;
+    margin: 0 auto 40px;
+}
+.archi_content,
+.programming_content {
+    display: flex;
+    margin-bottom: 30px;
+}
+.archi_wrap {
+    width: 50%;
+    padding: 0 20px;
+}
+.archi_hub {
+    position: relative;
+}
+.archi_hub_wrap {
+    width: fit-content;
+    position: relative;
+    margin: 0 auto;
+}
+.archi_wrap a {
+    display: block;
+    width: fit-content;
+}
+.archi_wrap a:hover,
+.programming_wrap a:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.archi_work_title {
+    width: fit-content;
+    font-size: 24px;
+    color: #6F789D;
+    padding-top: 4px;
+}
+.archi_work_subtitle {
+    width: fit-content;
+    font-size: 16px;
+    color: #6F789D;
+    padding-bottom: 10px;
+}
+.archi_work_season,
+.programming_work_season {
+    font-size: 12px;
+    width: fit-content;
+}
+.archi_work_explanation {
+    width: 400px;
+    padding-top: 10px;
+}
+.archi_wrap img {
+    height: 200px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.45);
+}
+.hub_achieve {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    padding: 4px 8px 6px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1.6px solid #6F789D;
+    border-radius: 8px;
+    color: #6F789D;
+    background-color: #eff0f4;
+}
+.programming_wrap {
+    width: calc(100% / 3);
+    padding: 0 20px;
+}
+.programming_wrap a {
+    display: block;
+    width: fit-content;
+}
+.programming_work_title {
+    width: fit-content;
+    font-size: 20px;
+    color: #6F789D;
+    padding: 4px 0;
+}
+.programming_work_explanation {
+    width: 300px;
+    padding-top: 10px;
+}
+.programming_work_explanation span {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 8px;
+}
+.programming_wrap img {
+    height: 150px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.45);
+}
+.archi_wrap a,
+.archi_work_title,
+.archi_work_subtitle,
+.archi_work_season,
+.archi_work_explanation,
+.programming_wrap a,
+.programming_work_title,
+.programming_work_subtitle,
+.programming_work_season,
+.programming_work_explanation{
+    margin: 0 auto;
+}
+footer {
+    margin: 20px 0;
+}
+#footer_title {
+    color: #6F789D;
+    font-size: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.header_img_area {
+    position: relative;
+}
+.header_img_area img {
+    width: 100vw;
+}
+.archi_main {
+    margin: 60px 7% 0;
+}
+.archi_main p {
+    line-height: 1.7em;
+}
+#work_title {
+    position: absolute;
+    width: fit-content;
+    background-color: rgba(256, 256, 256, .75);
+    top: 150px;
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 300;
+    padding: 20px 40px 30px;
+}
+.hub_header #work_title {
+    left: -555px;
+    color: #539935;
+}
+.museum_header #work_title {
+    left: -695px;
+    color: #e47c21;
+}
+#work_title span {
+    font-size: 28px;
+    line-height: 28px;
+}
+.introduction {
+    display: flex;
+}
+.text_area {
+    margin-right: 20px;
+}
+.site_analysis {
+    margin-top: 28px;
+}
+.item_title {
+    font-size: 24px;
+    margin: 0 0 6px;
+    line-height: 1.5em;
+}
+.hub_main .item_title {
+    color: #539935;
+}
+.museum_main .item_title {
+    color: #e47c21;
+}
+.item_text {
+    margin: 0;
+}
+.introduction img {
+    width: 600px;
+}
+.hub_main .concept {
+    display: flex;
+    margin-top: 30px;
+}
+.hub_main .concept img {
+    width: 500px;
+}
+.museum_main .concept,
+.museum_main .method {
+    margin-top: 50px;
+}
+.museum_main .concept img,
+.museum_main .method img {
+    width: 100%;
+    margin-top: 50px;
+}
+.program_img{
+    margin-top: 30px;
+}
+.whole_img {
+    margin-top: 50px;
+}
+.program_img img,
+.whole_img img {
+    width: 100%;
+}
+.drawing,
+.photo {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+#drawing_area,
+#photo_area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+}
+.drawing_img,
+.photo_img {
+    width: 100%;
+    flex-shrink: 0;
+    height: 600px;
+}
+.drawing_img img,
+.photo_img img{
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+.drawing_img.oblong_img img{
+    width: 100%;
+    object-fit: contain;
+}
+.drawing_arrow_area,
+.photo_arrow_area {
+    position: absolute;
+    top: 350px;
+    width: 100%;
+}
+.drawing_arrow,
+.photo_arrow {
+    width: 1000px;
+    margin: 0 auto;
+}
+#drawing_arrow_left,
+#drawing_arrow_right,
+#photo_arrow_left,
+#photo_arrow_right{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 60px;
+    line-height: 2;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0.375em 0.64952em;
+}
+.hub_main #drawing_arrow_left,
+.hub_main #drawing_arrow_right,
+.hub_main #photo_arrow_left,
+.hub_main #photo_arrow_right{
+    color: #539935;
+}
+.museum_main #drawing_arrow_left,
+.museum_main #drawing_arrow_right,
+.museum_main #photo_arrow_left,
+.museum_main #photo_arrow_right{
+    color: #e47c21;
+}
+#drawing_arrow_left,
+#photo_arrow_left{
+    float: left;
+    border-right-color: currentColor;
+    border-left: 0;
+}
+#drawing_arrow_right,
+#photo_arrow_right{
+    float: right;
+    border-left-color: currentColor;
+    border-right: 0;
+}
+#drawing_arrow_left:hover,
+#drawing_arrow_right:hover,
+#photo_arrow_left:hover,
+#photo_arrow_right:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+.prospect {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.prospect img {
+    width: 600px;
+}
+.presentation {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.presentation img {
+    height: 400px;
+}
