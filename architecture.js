@@ -25,7 +25,7 @@ $(window).on('load', function() {
     });
 
     $('.museum_main #drawing_arrow_right').on('click', function () {
-        if (drawingPosition === 5) {
+        if (drawingPosition === 8) {
             return false;
         }
         let right_px = -((drawingPosition + 1) * 100) + '%';
@@ -52,7 +52,7 @@ $(window).on('load', function() {
     });
 
     $('.museum_main #photo_arrow_right').on('click', function () {
-        if (photoPosition === 11) {
+        if (photoPosition === 13) {
             return false;
         }
         let right_px = -((photoPosition + 1) * 100) + '%';

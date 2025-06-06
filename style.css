@@ -219,7 +219,7 @@ footer {
 }
 .museum_header #work_title {
     left: -695px;
-    color: #e47c21;
+    color: #465daa;
 }
 #work_title span {
     font-size: 28px;
@@ -243,7 +243,7 @@ footer {
     color: #539935;
 }
 .museum_main .item_title {
-    color: #e47c21;
+    color: #465daa;
 }
 .item_text {
     margin: 0;
@@ -343,7 +343,7 @@ footer {
 .museum_main #drawing_arrow_right,
 .museum_main #photo_arrow_left,
 .museum_main #photo_arrow_right{
-    color: #e47c21;
+    color: #465daa;
 }
 #drawing_arrow_left,
 #photo_arrow_left{
