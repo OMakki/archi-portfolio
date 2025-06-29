@@ -83,7 +83,7 @@ a {
     margin-bottom: 30px;
 }
 .archi_wrap {
-    width: 50%;
+    width: calc(50% - 30px);
     padding: 0 20px;
 }
 .archi_hub {
@@ -142,7 +142,7 @@ a {
     background-color: #eff0f4;
 }
 .programming_wrap {
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 30px);
     padding: 0 20px;
 }
 .programming_wrap a {
@@ -316,7 +316,8 @@ footer {
 }
 .drawing_arrow,
 .photo_arrow {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 #drawing_arrow_left,
@@ -379,4 +380,264 @@ footer {
 }
 .presentation img {
     height: 400px;
+}
+
+@media screen and (max-width: 1400px) {
+    .drawing,
+    .photo {
+        height: 600px;
+    }
+    .drawing_img, .photo_img {
+        width: 100%;
+        flex-shrink: 0;
+        height: 500px;
+    }
+    .drawing_arrow_area,
+    .photo_arrow_area {
+        top: 300px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .content_area:not(:first-child) {
+        padding: 30px 2%;
+    }
+    .programming_wrap img {
+        height: 130px;
+    }
+    .drawing,
+    .photo {
+        height: 500px;
+    }
+    .drawing_img, .photo_img {
+        width: 100%;
+        flex-shrink: 0;
+        height: 400px;
+    }
+    .drawing_arrow_area,
+    .photo_arrow_area {
+        top: 250px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .programming_content {
+        flex-wrap: wrap;
+    }
+    .programming_wrap {
+        width: 50%;
+        padding: 0;
+    }
+    .programming_wrap:last-child {
+        margin-top: 30px;
+    }
+    .archi_wrap img,
+    .programming_wrap img {
+        height: 180px;
+    }
+    .programming_work_explanation,
+    .programming_skill {
+        width: 360px;
+    }
+    .archi_main .introduction,
+    .archi_main .concept,
+    .archi_main .prospect,
+    .archi_main .presentation {
+        display: block;
+    }
+    .archi_main .introduction .text_area {
+        display: flex;
+        justify-content: space-between;
+    }
+    .archi_main .introduction .text_area > div {
+        width: calc(50% - 10px);
+    }
+    .archi_main .introduction .site_analysis {
+        margin: 0;
+    }
+    .introduction .img_area img,
+    .concept .img_area img,
+    .prospect .img_area img,
+    .presentation .img_area img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .archi_wrap img,
+    .programming_wrap img {
+        height: 150px;
+    }
+    .archi_work_explanation,
+    .programming_work_explanation,
+    .programming_skill {
+        width: 320px;
+    }
+    .drawing,
+    .photo {
+        height: 400px;
+    }
+    .drawing_img, .photo_img {
+        width: 100%;
+        flex-shrink: 0;
+        height: 300px;
+    }
+    .drawing_arrow_area,
+    .photo_arrow_area {
+        top: 200px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .archi_content,
+    .programming_content {
+        display: block;
+    }
+    .archi_wrap,
+    .programming_wrap,
+    .programming_wrap:last-child {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .archi_wrap a,
+    .programming_wrap a,
+    .archi_work_explanation,
+    .programming_work_explanation,
+    .programming_skill {
+        width: 70%;
+    }
+    .archi_wrap img,
+    .programming_wrap img {
+        width: 100%;
+        height: auto;
+    }
+    .hub_achieve {
+        right: 50px;
+    }
+    #work_title {
+        top: 100px;
+        font-size: 42px;
+        line-height: 50px;
+    }
+    #work_title span {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .drawing,
+    .photo {
+        height: 350px;
+    }
+    .drawing_img, .photo_img {
+        width: 100%;
+        flex-shrink: 0;
+        height: 250px;
+    }
+    .drawing_arrow_area,
+    .photo_arrow_area {
+        top: 175px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .about_content {
+        display: block
+    }
+    .face_img {
+        display: block;
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+    #about_detail_parent {
+        margin: 20px 5% 0;
+    }
+    span.name {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .archi_wrap {
+        padding: 0;
+    }
+    .archi_main .introduction .text_area {
+        display: block;
+    }
+    .archi_main .introduction .text_area > div {
+        width: 100%;
+    }
+    .archi_main .introduction .site_analysis {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 550px) {
+    #work_title {
+        top: 70px;
+        font-size: 40px;
+        line-height: 48px;
+        padding: 10px 20px 20px;
+    }
+    #work_title span {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .museum_header #work_title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .drawing,
+    .photo {
+        height: 300px;
+    }
+    .drawing_img, .photo_img {
+        width: 100%;
+        flex-shrink: 0;
+        height: 200px;
+    }
+    .drawing_arrow_area,
+    .photo_arrow_area {
+        top: 150px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .page_title {
+        font-size: 32px;
+    }
+    #about_detail .name {
+        font-size: 28px;
+    }
+    .archi_work_title {
+        font-size: 22px;
+    }
+    .hub_achieve {
+        right: 30px;
+        font-size: 12px;
+    }
+    .archi_wrap a,
+    .programming_wrap a,
+    .archi_work_explanation,
+    .programming_work_explanation,
+    .programming_skill {
+        width: 80%;
+    }
+    #work_title,
+    .museum_header #work_title {
+        top: 40px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #work_title span {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .drawing,
+    .photo {
+        height: 250px;
+    }
+    .drawing_img, .photo_img {
+        width: 100%;
+        flex-shrink: 0;
+        height: 150px;
+    }
+    .drawing_arrow_area,
+    .photo_arrow_area {
+        top: 125px;
+    }
 }
